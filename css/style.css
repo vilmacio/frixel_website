@@ -5,8 +5,12 @@
 }
 body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.font-size-menu{
   font-size: 1.4rem;
 }
+
 .bg-frixel-color {
   background-color: #246d90 !important;
 }
@@ -25,7 +29,7 @@ body{
 
 .btn-frixel-color:hover{
   color: white;
-  background-color: #246d90;
+  background-color: #3b92bb;
 }
 
 .navbar-menu-icon{
