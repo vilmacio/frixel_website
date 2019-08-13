@@ -16,20 +16,20 @@ body{
 }
 
 .text-frixel-color{
-  color: #246d90;
+  color: #246d90 !important;
 }
 .text-pretoroxov:hover{
-  color: #246d90;
+  color: #246d90 !important;
 }
 
 .btn-frixel-color{
   color: white;
-  background-color: #246d90;
+  background-color: #246d90 !important;
 }
 
 .btn-frixel-color:hover{
   color: white;
-  background-color: #3b92bb;
+  background-color: #3b92bb !important;
 }
 
 .navbar-menu-icon{
