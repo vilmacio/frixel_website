@@ -6,14 +6,15 @@
         <title>Frixel</title>
         <link href="css/bootstrap.css" rel="stylesheet"/>
         <link href="css/style.css" rel="stylesheet"/>
-        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
         <link href="img/Frixel-icon.ico" rel="shortcut icon"/>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     </head>
 
     <body>
-      <nav class="navbar navbar-expand-lg fixed-top bg-white">
+      <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
         <div class="container">
           <a class="navbar-brand" href="#"><img src="img/logo.png" height="52" alt=""></a>
           <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
@@ -22,13 +23,63 @@
           <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-item nav-link font-size-menu text-frixel-color pl-5 pr-5" href="#">Home</a>
-              <a class="nav-item nav-link font-size-menu text-frixel-color pl-5 pr-5" href="servicos/index.html">Serviços</a>
-              <a class="nav-item nav-link font-size-menu text-frixel-color pl-5 pr-5" href="#">Colaborar</a>
+              <a class="nav-item nav-link font-size-menu text-frixel-color pl-5 pr-5" href="servicos/">Serviços</a>
+              <a class="nav-item nav-link font-size-menu text-frixel-color pl-5 pr-5" href="colaborar/index.html">Colaborar</a>
             </div>
           </div>
-          <a class="navbar-btn btn btn-sm btn-frixel-color pt-2 pb-2 pl-4 pr-4" href="#" target="_blank">Contactar</a>
+          <a type="button" class="navbar-btn btn btn-sm btn-frixel-color pt-2 pb-2 pl-4 pr-4" href="contato/index.html" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Contratar</a>
         </div>
       </nav>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Contratar serviço</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form class="modal-needs-validation pl-4 pr-4" method="POST" action="php/email-modal.php" novalidate>
+                  <div class="form-group">
+                    <label for="validationCustom01" class="col-form-label">Nome:</label>
+                    <input type="text" class="form-control" id="validationCustom01" name="nome" required>
+                    <div class="invalid-feedback">
+                      O nome é obrigatório
+                    </div>
+
+                    <label for="validationCustom02" class="col-form-label">E-mail:</label>
+                    <input type="email" class="form-control" id="validationCustom02" name="email" required>
+                    <div class="invalid-feedback">
+                      O e-mail é obrigatório
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="validationCustom03" class="col-form-label">Tipo de serviço:</label>
+                    <select class="custom-select" name="selecao" required>
+                      <option value="Nada">Selecione</option>
+                      <option value="Edição de vídeo">Pós-produção de vídeo</option>
+                      <option value="Criação de vídeo">Criação de vídeo</option>
+                      <option value="Edição de imagem">Edição/Criação de imagem</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Selecione uma opção
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-form-label">Se for um vídeo, especifique o tipo (opcional)</label>
+                    <input type="text" class="form-control" name="video" placeholder="Ex: documentário, animação, lyric video...">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
 
       <section id="home" class="pt-5 pt-md-11 mt-5 mb-5 pb-5">
         <div class="container">
@@ -41,17 +92,17 @@
                 Bem-vindo à <span class="text-frixel-color">Frixel</span>!
                 <h2 class="display-5">Produtora colaborativa</h2>
               </h1>
-              <p class="lead text-fluid text-center text-md-left text-muted mb-6 mb-lg-8">
+              <p class="lead text-fluid text-center text-md-left mb-6 mb-lg-8">
                 Somos a primeira grande produtora colaborativa de áudio-visual do Brasil! Conte com a gente para
                 ajudar você na produção do seu filme, documentário, canal no YouTube, Instagram, anúncio, 
-                e muito mais. 
+                e muito mais.
               </p>
               <div class="text-center text-md-left">
-                <a href="#" class="btn btn-frixel-color shadow lift mr-1">
+                <a href="#" class="btn btn-frixel-color shadow lift mr-1" target="_blank">
                   Ver portfólio <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
                 </a>
                 <a href="#" class="btn btn-light text-frixel-color shadow lift">
-                  Colaborar conosco
+                  Seja um colaborador
                 </a>
               </div>
             </div>
