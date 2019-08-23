@@ -16,15 +16,15 @@
     <body>
       <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
         <div class="container">
-          <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" height="52" alt=""></a>
+          <a class="navbar-brand" href="../"><img src="../img/logo.png" height="52" alt=""></a>
           <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon navbar-menu-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-item nav-link font-size-menu text-frixel-color pl-5 pr-5" href="../index.html">Home</a>
-              <a class="nav-item nav-link font-size-menu text-frixel-color pl-5 pr-5" href="#">Serviços</a>
-              <a class="nav-item nav-link font-size-menu text-frixel-color pl-5 pr-5" href="#">Colaborar</a>
+              <a class="nav-item nav-link font-size-menu text-frixel-color pl-5 pr-5" href="../">Home</a>
+              <a class="nav-item nav-link font-size-menu text-frixel-color pl-5 pr-5" href="../servicos/">Serviços</a>
+              <a class="nav-item nav-link font-size-menu text-frixel-color pl-5 pr-5" href="">Colaborar</a>
             </div>
           </div>
           <a type="button" class="navbar-btn btn btn-sm btn-frixel-color pt-2 pb-2 pl-4 pr-4" href="contato/index.html" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Contratar</a>
@@ -32,33 +32,54 @@
       </nav>
 
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Nova mensagem</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <form>
-                  <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Destinatário:</label>
-                    <input type="text" class="form-control" id="recipient-name">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contratar serviço</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form class="modal-needs-validation pl-4 pr-4" method="POST" action="../php/email-modal.php" novalidate>
+                <div class="form-group">
+                  <label for="validationCustom01" class="col-form-label">Nome:</label>
+                  <input type="text" class="form-control" id="validationCustom01" name="nome" required>
+                  <div class="invalid-feedback">
+                    O nome é obrigatório
                   </div>
-                  <div class="form-group">
-                    <label for="message-text" class="col-form-label">Mensagem:</label>
-                    <textarea class="form-control" id="message-text"></textarea>
+
+                  <label for="validationCustom02" class="col-form-label">E-mail:</label>
+                  <input type="email" class="form-control" id="validationCustom02" name="email" required>
+                  <div class="invalid-feedback">
+                    O e-mail é obrigatório
                   </div>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                <button type="button" class="btn btn-primary">Enviar</button>
-              </div>
+                </div>
+                <div class="form-group">
+                  <label for="validationCustom03" class="col-form-label">Tipo de serviço:</label>
+                  <select class="custom-select" name="selecao"required>
+                    <option value="">Selecione</option>
+                    <option value="Edição de vídeo">Pós-produção de vídeo</option>
+                    <option value="Criação de vídeo">Criação de vídeo</option>
+                    <option value="Edição de imagem">Edição/Criação de imagem</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Selecione uma opção
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-form-label">Se for um vídeo, especifique o tipo: (opcional)</label>
+                  <input type="text" class="form-control" name="video" placeholder="Ex: documentário, animação, lyric video...">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="submit" class="btn btn-frixel-color">Enviar</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
+      </div>
 
       <section class="pt-5 pt-md-11 mt-5 mb-5">
         <div class="container mt-5">
@@ -134,60 +155,57 @@
       <hr class="featurette-divider">
 
       <footer class="position-relative z-index-10 d-print-none">
-        <!-- Main block - menus, subscribe form-->
-        <div class="py-6 bg-gray-200 text-muted bg-gray pt-5 pb-2"> 
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-4 mb-5 mb-lg-0">
-                <div class="font-weight-bold text-uppercase text-dark mb-3">Frixel Studios</div>
-                <p>Essa startup brasileira especializada em produção de conteúdo áudio-visual atua de forma totalmente online e, por isso,
-                  pode contar com os grandes talentos deste setor espalhados pelo país.<br>Tem alguma dúvida?<br>
-                  <span class="text-frixel-color">contato@frixel.com.br</span>
-                </p>
-              </div>
-              <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
-                <h6 class="text-uppercase text-dark mb-3">Social</h6>
-                <ul class="list-unstyled">
-                  <li><a class="text-muted" href="index.html">Facebook</a></li>
-                  <li><a class="text-muted" href="category-rooms.html">Vimeo</a></li>
-                  <li><a class="text-muted" href="category-2-rooms.html">Instagram</a></li>
-
-                </ul>
-              </div>
-              <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
-                <h6 class="text-uppercase text-dark mb-3">Página</h6>
-                <ul class="list-unstyled">
-                  <li><a class="text-muted" href="contact.html">Home</a></li>
-                  <li><a class="text-muted" href="pricing.html">Serviços</a></li>
-                  <li><a class="text-muted" href="text.html">Colaborar</a></li>
-                  <li><a class="text-muted" href="faq.html">Entrar em contato</a></li>
-                </ul>
-              </div>
-              <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
-                <h6 class="text-uppercase text-dark mb-3">Legal</h6>
-                <ul class="list-unstyled">
-                  <li><a class="text-muted" href="../legal/termos/index.html">Termos de serviço</a></li>
-                  <li><a class="text-muted" href="category-2-rooms.html">Política de Privacidade</a></li>
-                </ul>
+          <div class="py-6 bg-gray-200 text-muted bg-gray pt-5 pb-2"> 
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                  <div class="font-weight-bold text-uppercase text-dark mb-3">Frixel Studios</div>
+                  <p>Essa startup brasileira especializada em produção de conteúdo áudio-visual atua de forma totalmente online e, por isso,
+                    pode contar com os grandes talentos deste setor espalhados pelo país.<br>Tem alguma dúvida?<br>
+                    <span class="text-frixel-color" id="email">contato@frixel.com.br</span>
+                  </p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+                  <h6 class="text-uppercase text-dark mb-3">Social</h6>
+                  <ul class="list-unstyled">
+                    <li><a class="text-muted" target="_blank" href="https://www.facebook.com/Frixel-Studios-106103964093948">Facebook</a></li>
+                    <li><a class="text-muted" target="_blank" href="https://www.instagram.com/p_frixel/">Instagram</a></li>
+    
+                  </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+                  <h6 class="text-uppercase text-dark mb-3">Página</h6>
+                  <ul class="list-unstyled">
+                    <li><a class="text-muted" href="../">Home</a></li>
+                    <li><a class="text-muted" href="../servicos/">Serviços</a></li>
+                    <li><a class="text-muted" href="">Colaborar</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+                  <h6 class="text-uppercase text-dark mb-3">Legal</h6>
+                  <ul class="list-unstyled">
+                    <li><a class="text-muted" href="../legal/termos/">Termos de Serviço</a></li>
+                    <li><a class="text-muted" href="../legal/privacidade/">Política de Privacidade</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- Copyright section of the footer-->
-        <div class="py-4 font-weight-light bg-dark text-light">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-md-6 text-center text-md-left">
-                <p class="text-sm mb-md-0">© 2019-2020 Frixel Studios. Todos os direitos reservados.</p>
-              </div>
-              <div class="col-md-6">
-                <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-md-right">
-                  
-                </ul>
+          <!-- Copyright section of the footer-->
+          <div class="py-4 font-weight-light bg-dark text-light">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-left">
+                  <p class="text-sm mb-md-0">© 2019-2020 Frixel Studios. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6">
+                  <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-md-right">
+                    
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </footer>
+        </footer>
   </body>
 </html>

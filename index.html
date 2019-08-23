@@ -8,7 +8,7 @@
         <link href="css/style.css" rel="stylesheet"/>
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
+        
         <link href="img/Frixel-icon.ico" rel="shortcut icon"/>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     </head>
@@ -16,18 +16,18 @@
     <body>
       <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="img/logo.png" height="52" alt=""></a>
+          <a class="navbar-brand" href="#"><img src="img/logo2.png" height="52" alt="logo_frixel" id="logo"></a>
           <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon navbar-menu-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-item nav-link font-size-menu text-frixel-color pl-5 pr-5" href="#">Home</a>
-              <a class="nav-item nav-link font-size-menu text-frixel-color pl-5 pr-5" href="servicos/">Serviços</a>
-              <a class="nav-item nav-link font-size-menu text-frixel-color pl-5 pr-5" href="colaborar/index.html">Colaborar</a>
+              <a class="nav-item nav-link font-size-menu text-frixel-color pl-5 pr-5" id="navHome" href="#">Home</a>
+              <a class="nav-item nav-link font-size-menu text-frixel-color pl-5 pr-5" id="navServicos" href="servicos/">Serviços</a>
+              <a class="nav-item nav-link font-size-menu text-frixel-color pl-5 pr-5" id="navColaborar" href="colaborar/">Colaborar</a>
             </div>
           </div>
-          <a type="button" class="navbar-btn btn btn-sm btn-frixel-color pt-2 pb-2 pl-4 pr-4" href="contato/index.html" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Contratar</a>
+          <a type="button" class="navbar-btn btn btn-sm btn-frixel-color pt-2 pb-2 pl-4 pr-4" id="btn_contratar" href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Contratar</a>
         </div>
       </nav>
 
@@ -57,8 +57,8 @@
                   </div>
                   <div class="form-group">
                     <label for="validationCustom03" class="col-form-label">Tipo de serviço:</label>
-                    <select class="custom-select" name="selecao" required>
-                      <option value="Nada">Selecione</option>
+                    <select class="custom-select" name="selecao"required>
+                      <option value="">Selecione</option>
                       <option value="Edição de vídeo">Pós-produção de vídeo</option>
                       <option value="Criação de vídeo">Criação de vídeo</option>
                       <option value="Edição de imagem">Edição/Criação de imagem</option>
@@ -68,12 +68,12 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-form-label">Se for um vídeo, especifique o tipo (opcional)</label>
+                    <label class="col-form-label">Se for um vídeo, especifique o tipo: (opcional)</label>
                     <input type="text" class="form-control" name="video" placeholder="Ex: documentário, animação, lyric video...">
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="submit" class="btn btn-frixel-color">Enviar</button>
                   </div>
                 </form>
               </div>
@@ -85,23 +85,22 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-12 col-md-5 col-lg-6 order-md-2 text-center">
-              <img src="img/icon2.svg" class="img-fluid" alt="Imagem do Velho Veras" width="59%">
+              <img src="img/icon2.svg" class="img-fluid" alt="Imagem do Velho Veras" id="banner" width="59%">
             </div>
             <div class="col-12 col-md-7 col-lg-6 order-md-1 aos-init aos-animate" data-aos="fade-up">
               <h1 class="display-4 text-center text-md-left">
-                Bem-vindo à <span class="text-frixel-color">Frixel</span>!
+                Bem-vindo à <span class="text-frixel-color" id="span">Frixel</span>!
                 <h2 class="display-5">Produtora colaborativa</h2>
               </h1>
               <p class="lead text-fluid text-center text-md-left mb-6 mb-lg-8">
-                Somos a primeira grande produtora colaborativa de áudio-visual do Brasil! Conte com a gente para
-                ajudar você na produção do seu filme, documentário, canal no YouTube, Instagram, anúncio, 
+                Somos a primeira grande produtora colaborativa de áudio-visual do Brasil! Conte com a gente para editar o seu filme, documentário, vídeo do YouTube, Instagram, anúncio, 
                 e muito mais.
               </p>
               <div class="text-center text-md-left">
-                <a href="#" class="btn btn-frixel-color shadow lift mr-1" target="_blank">
+                <a href="#" class="btn btn-frixel-color shadow lift mr-1" target="_blank" id="portfolio">
                   Ver portfólio <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
                 </a>
-                <a href="#" class="btn btn-light text-frixel-color shadow lift">
+                <a href="colaborar/" class="btn btn-light text-frixel-color shadow lift" id="btn_colaborar">
                   Seja um colaborador
                 </a>
               </div>
@@ -118,32 +117,30 @@
               <div class="font-weight-bold text-uppercase text-dark mb-3">Frixel Studios</div>
               <p>Essa startup brasileira especializada em produção de conteúdo áudio-visual atua de forma totalmente online e, por isso,
                 pode contar com os grandes talentos deste setor espalhados pelo país.<br>Tem alguma dúvida?<br>
-                <span class="text-frixel-color">contato@frixel.com.br</span>
+                <span class="text-frixel-color" id="email">contato@frixel.com.br</span>
               </p>
             </div>
             <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
               <h6 class="text-uppercase text-dark mb-3">Social</h6>
               <ul class="list-unstyled">
-                <li><a class="text-muted" href="index.html">Facebook</a></li>
-                <li><a class="text-muted" href="category-rooms.html">Vimeo</a></li>
-                <li><a class="text-muted" href="category-2-rooms.html">Instagram</a></li>
+                <li><a class="text-muted" target="_blank" href="https://www.facebook.com/Frixel-Studios-106103964093948">Facebook</a></li>
+                <li><a class="text-muted" target="_blank" href="https://www.instagram.com/p_frixel/">Instagram</a></li>
 
               </ul>
             </div>
             <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
               <h6 class="text-uppercase text-dark mb-3">Página</h6>
               <ul class="list-unstyled">
-                <li><a class="text-muted" href="contact.html">Home</a></li>
-                <li><a class="text-muted" href="pricing.html">Serviços</a></li>
-                <li><a class="text-muted" href="text.html">Colaborar</a></li>
-                <li><a class="text-muted" href="faq.html">Entrar em contato</a></li>
+                <li><a class="text-muted" href="">Home</a></li>
+                <li><a class="text-muted" href="servicos/">Serviços</a></li>
+                <li><a class="text-muted" href="colaborar/">Colaborar</a></li>
               </ul>
             </div>
             <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
               <h6 class="text-uppercase text-dark mb-3">Legal</h6>
               <ul class="list-unstyled">
-                <li><a class="text-muted" href="legal/termos/index.html">Termos de serviço</a></li>
-                <li><a class="text-muted" href="legal/privacidade/index.html">Política de Privacidade</a></li>
+                <li><a class="text-muted" href="legal/termos/">Termos de Serviço</a></li>
+                <li><a class="text-muted" href="legal/privacidade/">Política de Privacidade</a></li>
               </ul>
             </div>
           </div>
@@ -166,6 +163,6 @@
       </div>
     </footer>
 
-
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
