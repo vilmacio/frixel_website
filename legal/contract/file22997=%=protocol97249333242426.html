@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Legal contract</title>
+        <link href="https://www.frixel.com.br/css/bootstrap.css" rel="stylesheet"/>
+        <link href="https://www.frixel.com.br/css/style.css" rel="stylesheet"/>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="https://www.frixel.com.br/js/bootstrap.js"></script>
+        <script type="text/javascript" src="https://www.frixel.com.br/js/script.js"></script>
+        <script type="text/javascript" src="validacao.js"></script>
+        <link href="https://www.frixel.com.br/img/Frixel-icon.ico" rel="shortcut icon"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    </head>
+
+    <body>
+      <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
+        <div class="container text-center">
+          <a class="" href="https://www.frixel.com.br"><img src="https://www.frixel.com.br/img/logo.png" class="text-center" height="52" alt="logo"></a>
+          <p>Legal contract</p>
+        </div>
+      </nav>
+
+      <main class="site-main main mt-5 pt-5 mb-5" id="main">
+        <section class="section mt-4">
+          <div class="container">
+            <div class="row">
+                <div class="content-area col-md-8 mx-auto" id="primary">
+                    <header class="entry-header">
+                        <h1 class="entry-title">Termos contratuais</h1>
+                    </header>
+                    <p><br><strong>1. Informações gerais</strong></p>
+                    <p>O presente contrato contém informações a respeito do modo como será exercido os deveres das partes envolvidas: o CONTRATANTE e o CONTRATADO.</p>
+                    <p>Este contrato poderá ser atualizado em decorrência de eventual atualização normativa, razão pela qual se convida o CONTRATANTE a consultar esta seção quando o for devidamente notificado.</p>
+                    
+                    <p><br><br><strong>2. Direitos do CONTRATADO</strong></p>
+                    <p>O CONTRATADO se compromete a cumprir e exercer os seguintes direitos:</p>
+                    <p style="padding-left: 30px;">- Agir sempre em detrimento da entidade, com respeito, lealdade e transparência.</p>
+                    <p style="padding-left: 30px;">- Cumprir prazos e manter uma boa comunicação com o cliente e com o negociador da entidade.</p>
+                    <p style="padding-left: 30px;">- Nunca realizar cobrança diretamente para o cliente.</p>
+                    <p style="padding-left: 30px;">- Sempre estipular o prazo de entrega do projeto.</p>
+                    <p style="padding-left: 30px;">- Possibilidade de modificar o prazo de entrega, previamente estipulado, em até 3 dias úteis (para mais ou para menos).</p>
+                    <p style="padding-left: 30px;">- Deve disponibilizar os trabalhos do portfólio pessoal para fazerem parte do portfólio da produtora nas mídias sociais e/ou para campanhas de marketing da mesma.</p>
+                    <p style="padding-left: 30px;">- Possibilidade de pedir a retirada destes respectivos materiais após a rescisão contratual (art. 4).</p>
+
+
+                    
+                    <p><br><br><strong>3. Direitos do CONTRATANTE</strong></p>
+                    <p>O CONTRATANTE se compromete a cumprir e exercer os seguintes direitos:</p>
+                    <p style="padding-left: 30px;">- Agir sempre em detrimento da entidade, com respeito, lealdade e transparência.</p>
+                    <p style="padding-left: 30px;">- Negociar diretamente com o cliente.</p>
+                    <p style="padding-left: 30px;">- Apresentar, previamente, todos os detalhes do projeto ao CONTRATADO, incluindo o valor total do projeto.</p>
+                    <p style="padding-left: 30px;">- Realizar o devido pagamento ao CONTRATADO após a entrega do projeto (80% do valor total do projeto).</p>
+                    <p style="padding-left: 30px;">- Realizar o devido pagamento ao CONTRATADO através da forma de pagamento escolhida pelo mesmo.</p>
+                    <p style="padding-left: 30px;">- Nunca fazer alterações nos materiais cedidos pelo CONTRATADO que vierem a compor o portfólio da produtora.</p>
+                    
+                    <p><strong><br>4. Rescisão contratual</strong></p>
+                    <p>O descumprimento dos presentes termos resultará em rescisão contratual.</p>
+                    <p>As duas partes possuem a liberdade de rescindir o contrato a qualquer momento, sem nenhuma penalidade ou multa estabelecida.</p>
+                    <p>As duas partes se comprometem a notificar previamente sobre a rescisão através de e-mail.</p>
+                    
+                    
+                    
+                    <p><strong><br>5. Concordância com os termos</strong></p>
+                    <p>Os presentes termos são válidos a partir da concordância do CONTRATADO em comum acordo com o CONTRATANTE.</p>
+                    <p>Os presentes termos são válidos até a rescisão do contrato prevista no art. 4.</p>
+                    <p>A concordância ou discordância em relação aos termos por parte do CONTRATADO fica registrada a partir do preenchimento dos dados no formulário abaixo.</p>
+                  </div>                                           
+                </div>
+
+                <div class="row mt-5">
+                  <div class="content-area col-md-8 mx-auto" id="primary">
+                  <form class="contract-needs-validation pl-4 pr-4" method="POST" action="contract.php" novalidate>
+                    <div class="form-group col">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">Email:</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email" name="email" required>
+                        <div class="invalid-feedback">
+                          Insira um e-mail válido.
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="form-group col">
+                      <label for="inputPassword3" class="col-sm-4 col-form-label">ID do colaborador:</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputPassword3" placeholder="ID do colaborador" name="id" required>
+                        <div class="invalid-feedback">
+                          O ID é obrigatório.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col">
+                        <div class="col-sm-10">
+                          <div class="form-check mt-2">
+                            <input class="form-check-input" type="radio" id="gridRadios1" value="Li e CONCORDO com os termos descritos acima." name="radi" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                              Li e CONCORDO com os termos descritos acima.
+                            </label>
+                          </div>
+                          <div class="form-check mt-2">
+                            <input class="form-check-input" type="radio" id="gridRadios2" value="Li e NAO CONCORDO com os termos descritos acima." name="radi">
+                            <label class="form-check-label" for="gridRadios2">
+                                Li e NÃO CONCORDO com os termos descritos acima.
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group col">
+                      <div class="col-sm-10">
+                        <div class="form-check mt-2">
+                          <input class="form-check-input" type="checkbox" id="gridCheck1" required>                        
+                          <label class="form-check-label" for="gridCheck1">
+                            Li e concordo com os <a href="https://www.frixel.com.br/legal/termos" target="_blank">termos de serviço</a>.
+                          </label>
+                          <div class="invalid-feedback">
+                            Você deve concordar antes de continuar.
+                          </div>
+                        </div>
+                        <div class="form-check mt-2">
+                            <input class="form-check-input" type="checkbox" id="gridCheck2" required>
+                            <label class="form-check-label" for="gridCheck2">
+                              Li e concordo com a <a href="https://www.frixel.com.br/legal/privacidade" target="_blank">política de privacidade</a>.
+                            </label>
+                            <div class="invalid-feedback">
+                              Você deve concordar antes de continuar.
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="form-group col">
+                      <div class="col-sm-10">
+                        <button type="submit" class="btn btn-frixel-color">Enviar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+
+        <footer class="position-relative z-index-10 d-print-none">
+            <div class="py-4 font-weight-light bg-dark text-light">
+              <div class="container">
+                    <p class="text-center">© 2019-2020 Frixel Studios. Todos os direitos reservados.</p>
+              </div>
+            </div>
+          </footer>
+  </body>
+</html>
