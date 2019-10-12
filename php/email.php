@@ -54,8 +54,7 @@ $msg = '
 $to2 = $email;
 $subject2 = "Frixel Studios - Solicitação enviada";
 $body2 = $msg;
-$header2 = "From:contato@frixel.com.br"."\n".
-            "FromName:Frixel"."\n".
+$header2 = "From:frixel@frixel.com.br"."\n".
             "Content-type: text/html"."\n".
             "X=Mailer:PHP/".phpversion();
 
@@ -64,8 +63,11 @@ mail($to2,$subject2,$body2,$header2);
 ?>
 <html>
     <head>
-        <link href="../css/bootstrap.css" rel="stylesheet"/>
+    <link href="../css/bootstrap.css" rel="stylesheet"/>
         <link href="../css/style.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
         <title>Colaborar</title>
     </head>
     <body>

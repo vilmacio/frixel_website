@@ -1,216 +1,307 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Colaborar</title>
-        <link href="../css/bootstrap.css" rel="stylesheet"/>
-        <link href="../css/style.css" rel="stylesheet"/>
-        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script type="text/javascript" src="../js/bootstrap.js"></script>
-        <script type="text/javascript" src="../js/script.js"></script>
-        <link href="../img/Frixel-icon.ico" rel="shortcut icon"/>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-    </head>
+  <head>
+    <meta charset="utf-8">
+    <title>Colaborar
+    </title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Frixel - Produtora de audiovisual colaborativa">
+    <meta name="keywords" content="design, audiovisual, produtora, portfolio, video, imagem, audio, produção, Animação, 3D, 2D, publicitário">
+    <meta name="author" content="Frixel Studios">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link href="../img/icons/frixel-icon2.png" rel="shortcut icon"/>
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="../css/vendor.min.css">
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../css/theme.min.css">
+    <!-- Google Tag Manager-->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-PVV9F7F');
+      
+    </script>
+    <!-- Modernizr-->
+    <script src="../js/modernizr.min.js"></script>
+    <script src="../js/script.js"></script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PVV9F7F" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+    </noscript>
+    <!-- Off-Canvas Menu-->
+    <div class="offcanvas-container is-triggered offcanvas-container-reverse" id="mobile-menu"><span class="offcanvas-close"><i class="fe-icon-x"></i></span>
+      <div class="px-4 pb-4">
+        <h6>Menu</h6>
+        <div class="d-flex justify-content-between pt-2">
+          <a class="btn btn-primary btn-sm btn-block" href="" data-toggle="modal" data-target="#exampleModal"><i class="fe-icon-dollar-sign"></i>&nbsp;Contratar Agora</a>
+        </div>
+      </div>
+      <div class="offcanvas-scrollable-area border-top" style="height:calc(100% - 235px); top: 144px;">
+        <!--Mobile Menu-->
+        <div class="accordion mobile-menu" id="accordion-menu">
+          <!--Home-->
+          <div class="card">
+            <div class="card-header"><a class="mobile-menu-link" href="https://www.frixel.com.br/">Home</a></div>
+          </div>
+          <!--Portfolio-->
+          <div class="card">
+            <div class="card-header"><a class="mobile-menu-link" href="https://www.frixel.com.br/portfolio/">Portfólio</a></div>
+          </div>
+          <!--Colaborar-->
+          <div class="card">
+            <div class="card-header"><a class="mobile-menu-link active" href="https://www.frixel.com.br/colaborar/">Colaborar</a></div> 
+          </div>
+          <!--Ajuda-->
+          <div class="card">
+            <div class="card-header"><a class="mobile-menu-link" href="https://www.frixel.com.br/ajuda/">Ajuda</a></div> 
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-footer px-4 pt-3 pb-2 text-center"><a class="social-btn sb-style-3 sb-facebook" href="#"><i class="socicon-facebook"></i></a><a class="social-btn sb-style-3 sb-vimeo" href="#"><i class="socicon-vimeo"></i></a><a class="social-btn sb-style-3 sb-youtube" href="#"><i class="socicon-youtube"></i></a><a class="social-btn sb-style-3 sb-instagram" href="#"><i class="socicon-instagram"></i></a></div>
+    </div>
+    
+    <!-- Navbar: Default-->
+    <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+    <header class="navbar-wrapper navbar-sticky">
+      <div class="d-table-cell align-middle pr-md-3"><a class="navbar-brand mr-1" style="width: 129px" href="https://www.frixel.com.br"><img src="../img/logo/frixel-dark.png" alt="Frixel"/></a></div>
+      <div class="d-table-cell w-100 align-middle pl-md-3">
+        <div class="navbar justify-content-end justify-content-lg-between">
 
-    <body>
-      <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
-        <div class="container">
-          <a class="navbar-brand" href="../"><img src="../img/logo.png" height="52" alt=""></a>
-          <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
-            <span class="navbar-toggler-icon navbar-menu-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-item nav-link font-size-menu text-frixel-color pl-5 pr-5" href="../">Home</a>
-              <a class="nav-item nav-link font-size-menu text-frixel-color pl-5 pr-5" href="../servicos/">Serviços</a>
-              <a class="nav-item nav-link font-size-menu text-frixel-color pl-5 pr-5" href="">Colaborar</a>
+          <!-- Main Menu-->
+          <ul class="navbar-nav d-none d-lg-block">
+            <!--Home-->
+            <li class="nav-item"><a class="nav-link" href="https://www.frixel.com.br/">Home</a></li>
+
+            <!--Portfólio-->
+            <li class="nav-item"><a class="nav-link" href="https://www.frixel.com.br/portfolio/">Portfólio</a></li>
+
+            <!--Colaborar-->
+            <li class="nav-item active"><a class="nav-link" href="https://www.frixel.com.br/colaborar/">Colaborar</a></li>
+            
+            <!--Ajuda-->
+            <li class="nav-item"><a class="nav-link" href="https://www.frixel.com.br/ajuda/">Ajuda</a></li>
+
+          </ul>
+          <div>
+            <ul class="navbar-buttons d-inline-block align-middle mr-lg-2">
+              <li class="d-block d-lg-none"><a href="#mobile-menu" data-toggle="offcanvas"><i class="fe-icon-menu"></i></a></li>
+            </ul><a class="btn btn-gradient ml-3 d-none d-xl-inline-block" href="" data-toggle="modal" data-target="#exampleModal">Contratar agora</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Modal Components -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contratar serviço</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="modal-needs-validation pl-4 pr-4" method="POST" action="../php/email-modal.php" novalidate>
+              <div class="form-group">
+                <label for="validationCustom01" class="col-form-label">Tipo de cliente:</label>
+                <select class="custom-select" name="cliente" required>
+                  <option value="Pessoa">Pessoa</option>
+                  <option value="Empresa">Empresa</option>
+
+                </select>
+                <div class="invalid-feedback">
+                  Selecione uma opção
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="validationCustom02" class="col-form-label">Nome:</label>
+                <input type="text" class="form-control" id="validationCustom02" name="nome" required>
+                <div class="invalid-feedback">
+                  O nome é obrigatório
+                </div>
+
+                <label for="validationCustom03" class="col-form-label">E-mail:</label>
+                <input type="email" class="form-control" id="validationCustom03" name="email" required>
+                <div class="invalid-feedback">
+                  Insira um e-mail válido
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="validationCustom04" class="col-form-label">Tipo de serviço:</label>
+                <select class="custom-select" name="selecao"required>
+                  <option value="">Selecione</option>
+                  <option value="Edição de vídeo">Pós-produção de vídeo</option>
+                  <option value="Animação 2D">Animação 2D</option>
+                  <option value="Animação 3D">Animação 3D</option>
+                  <option value="Edição de imagem">Edição/Criação de imagem</option>
+                  <option value="Outro">Outro</option>
+                </select>
+                <div class="invalid-feedback">
+                  Selecione uma opção
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page Title-->
+    <div class="page-title d-flex" aria-label="Page title" style="background-image: url(../img/page-title/portfolio-pattern.png);">
+      <div class="container text-left align-self-center">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="https://www.frixel.com.br/">Home</a>
+            </li>
+            <li class="breadcrumb-item"><a href="https://www.frixel.com.br/colaborar/">Colaborar</a>
+            </li>
+          </ol>
+        </nav>
+        <h1 class="page-title-heading">Colaborar</h1>
+        <div class="page-title-subheading">Entre para o nosso time em apenas <strong>2 etapas</strong>.</div>
+      </div>
+    </div>
+    <!-- Page Content-->
+    <div class="container pb-5 mb-3">
+      <div class="container">
+        <!-- Process-->
+        <h2 class="h4 text-center pt-5">Etapas de análise</h2>
+        <div class="row pt-3 pb-2">
+          <div class="col-lg-2 col-sm-6 mb-3"></div>
+          <div class="col-lg-4 col-sm-6 mb-3">
+            <!-- Step-->
+            <div class="step text-center">
+              <div class="step-number">1</div>
+              <h3 class="step-title">Conhecendo você</h3>
+              <p class="step-text text-sm">Preencha o formulário abaixo com seus dados pessoais e sua experiência profissional afim de conhecermos você melhor.</p>
             </div>
           </div>
-          <a type="button" class="navbar-btn btn btn-sm btn-frixel-color pt-2 pb-2 pl-4 pr-4" href="contato/index.html" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Contratar</a>
-        </div>
-      </nav>
-
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Contratar serviço</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                <span aria-hidden="true">&times;</span>
-              </button>
+          <div class="col-lg-4 col-sm-6 mb-3">
+            <!-- Step-->
+            <div class="step text-center">
+              <div class="step-number">2</div>
+              <h3 class="step-title">Conhecendo o seu trabalho</h3>
+              <p class="step-text text-sm">Após passar pela primeira etapa, enviaremos instruções de como você deve enviar seu portfólio que será analisado pela nossa equipe.</p>
             </div>
-            <div class="modal-body">
-              <form class="modal-needs-validation pl-4 pr-4" method="POST" action="../php/email-modal.php" novalidate>
+          </div>
+          <div class="col-lg-2 col-sm-6 mb-3"></div>
+        </div>
+        <!-- Formulário-->
+        <h2 class="h4 text-center pt-5 pb-1">Vamos começar?</h2>
+        <p class="p text-center pb-3">Preencha o formulário abaixo</p>
+        <div class="wizard">
+          <form class="wizard-body needs-validation" method="POST" action="../php/email.php" novalidate>
+            <div class="row">
+              <div class="col-sm-6">
                 <div class="form-group">
-                  <label for="validationCustom01" class="col-form-label">Nome:</label>
-                  <input type="text" class="form-control" id="validationCustom01" name="nome" required>
-                  <div class="invalid-feedback">
-                    O nome é obrigatório
-                  </div>
-
-                  <label for="validationCustom02" class="col-form-label">E-mail:</label>
-                  <input type="email" class="form-control" id="validationCustom02" name="email" required>
-                  <div class="invalid-feedback">
-                    O e-mail é obrigatório
-                  </div>
+                  <label for="help-name">Nome completo <strong class="text-danger">*</strong></label>
+                  <input class="form-control" type="text" required="" id="nome">
+                  <div class="invalid-feedback">O nome é obrigatório!</div>
                 </div>
+              </div>
+              <div class="col-sm-6">
                 <div class="form-group">
-                  <label for="validationCustom03" class="col-form-label">Tipo de serviço:</label>
-                  <select class="custom-select" name="selecao"required>
-                    <option value="">Selecione</option>
-                    <option value="Edição de vídeo">Pós-produção de vídeo</option>
-                    <option value="Criação de vídeo">Criação de vídeo</option>
-                    <option value="Edição de imagem">Edição/Criação de imagem</option>
-                  </select>
-                  <div class="invalid-feedback">
-                    Selecione uma opção
-                  </div>
+                  <label for="estado">Estado/Cidade <strong class="text-danger">*</strong></label>
+                  <input class="form-control" type="text" required="" id="estado">
+                  <div class="invalid-feedback">O estado e a cidade são obrigatórios!</div>
                 </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
                 <div class="form-group">
-                  <label class="col-form-label">Se for um vídeo, especifique o tipo: (opcional)</label>
-                  <input type="text" class="form-control" name="video" placeholder="Ex: documentário, animação, lyric video...">
+                  <label for="help-name">Telefone <strong class="text-danger">*</strong></label>
+                  <input class="form-control" type="text" required="" id="telefone">
+                  <div class="invalid-feedback">O telefone é obrigatório!</div>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                  <button type="submit" class="btn btn-frixel-color">Enviar</button>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="help-email">E-mail <strong class="text-danger">*</strong></label>
+                  <input class="form-control" type="email" required="" id="email">
+                  <div class="invalid-feedback">Insira um email válido!</div>
                 </div>
-              </form>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="help-message">Experiência <strong class="text-danger">*</strong></label>
+              <textarea class="form-control" rows="9" required="" id="experiencia" placeholder="Especialidades, experiência, certificados, trabalhos realizados..."></textarea>
+              <small class="form-text text-muted" id="passwordHelpBlock">Não inclua links do seu portfólio, apenas descreva os seus trabalhos mais relevantes.<br></small>
+              <div class="invalid-feedback">Este campo é obrigatório!</div>
+            </div>
+            <div class="form-group">
+              <label for="help-message">Motivação <strong class="text-danger">*</strong></label>
+              <textarea class="form-control" rows="5" required="" id="motivacao" placeholder="O que lhe motiva a ser um(a) colaborador(a) da Frixel?"></textarea>
+              <div class="invalid-feedback">Este campo é obrigatório!</div>
+            </div>
+            <button class="btn btn-primary mr-4" type="submit">Enviar formulário</button><a class="navi-link d-inline-block align-middle py-2" href="https://www.frixel.com.br/legal/privacidade" target="_blank">Política de privacidade</a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Footer-->
+    <footer class="bg-dark pt-5">
+      <div class="container pt-2">
+        <div class="row">
+          <div class="col-lg-3 pb-4 mb-2 text-center text-lg-left"><a class="navbar-brand d-inline-block mb-4" href="https://www.frixel.com.br"><img src="../img/logo/frixel-light.png" alt="Frixel"></a>
+            <p class="text-sm text-white opacity-50 pb-2">Essa startup brasileira especializada em produção de conteúdo áudio-visual atua de forma totalmente online e, por isso, pode contar com os grandes talentos deste setor espalhados pelo país.</p><a class="social-btn sb-style-6 sb-facebook sb-light-skin" href="https://www.facebook.com/Frixel-Studios-106103964093948"><i class="socicon-facebook"></i></a><a class="social-btn sb-style-6 sb-vimeo sb-light-skin" href="https://vimeo.com/user102098846"><i class="socicon-vimeo"></i></a><a class="social-btn sb-style-6 sb-youtube sb-light-skin" href="https://www.youtube.com/channel/UClgMF_RzKlDMcLaTCTa8cKg"><i class="socicon-youtube"></i></a><a class="social-btn sb-style-6 sb-instagram sb-light-skin" href="https://www.instagram.com/p_frixel/"><i class="socicon-instagram"></i></a>
+          </div>
+          <div class="col-lg-4">
+            <div class="widget widget-light-skin mb-0">
+              <h4 class="widget-title">Páginas</h4>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="widget widget-categories widget-light-skin">
+                  <ul>
+                    <li><a href="https://www.frixel.com.br">Home </a></li>
+                    <li><a href="https://www.frixel.com.br/portfolio">Portfólio </a></li>
+                    <li><a href="https://www.frixel.com.br/colaborar">Colaborar </a></li>
+                    <li><a href="https://www.frixel.com.br/ajuda">Ajuda </a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="widget widget-categories widget-light-skin">
+              <h4 class="widget-title">Legal</h4>
+              <ul>
+                <li><a href="https://www.frixel.com.br/legal/privacidade"><i class="fe-icon-book text-white opacity-50"></i>Política de Privacidade</a></li>
+                <li><a href="https://www.frixel.com.br/legal/termos"><i class="fe-icon-book text-white opacity-50"></i>Termos de Serviço</a></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-
-      <section class="pt-5 pt-md-11 mt-5 mb-5">
-        <div class="container mt-5">
-            <h1 class="text-center">Seja um colaborador</h1>
-            <h5 class="text-center">Nos mostre suas habilidades enviando o seu portfólio; se você for selecionado, pode começar a trabalhar conosco e complementar a sua renda!</h5>
-            <div class="container mt-5  pt-5">
-                <p class="mb-5 p"><strong class="text-frixel-color">Etapa 1 - </strong>Preencha o formulário abaixo contando um pouco sobre você: sua experiência, certificados, trabalhos realizados e o motivo pelo qual quer trabalhar para a Frixel.</p>
-                <p class="mb-5 p"><strong class="text-frixel-color">Etapa 2 - </strong>Caso passe pela primeira etapa, enviaremos um e-mail para você com instruções de como enviar o seu portfólio que vai ser analisado pela nossa equipe.</p>
-                <p class="mb-5 p"><strong class="text-frixel-color">Etapa 3 - </strong>Se gostarmos do seu trabalho, parabéns, está quase lá! Nesta etapa lhe serão apresentados os termos e condições para trabalhar com a gente.</p>
-                <p class="mb-5 p"><strong class="text-frixel-color">Etapa 4 - </strong>Caso aceite os termos, parabéns, você é um funcionário da Frixel! A partir deste momento, vão ser passadas instruções antes do seu primeiro job. Boa sorte!</p>
-            </div>
-            <div class="mt-5 mb-5 pt-5 pb-2">
-                <h2 class="text-center">Eai, vamos começar?</h2>
-                <p class="text-center p">Preencha o formulário</p>
-            </div>
-            <form class="needs-validation pl-4 pr-4" method="POST" action="../php/email.php" novalidate>
-                <div class="form-row">
-                  <div class="col-md-6 mb-3">
-                    <label for="validationCustom01">Nome completo</label>
-                    <input type="text" class="form-control mb-4" id="validationCustom01" name="nome" placeholder="Ex: Fulano de Tal" required>
-                    <div class="invalid-feedback">
-                      O nome é obrigatório
-                    </div>
-
-                    <label for="validationCustom02">Telefone</label>
-                    <input type="number" class="form-control" id="validationCustom02" name="telefone" placeholder="Apenas números" required>
-                    <div class="invalid-feedback">
-                      O telefone é obrigatório (Apenas números)
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <label for="validationCustom04">Estado</label>
-                    <input type="text" class="form-control mb-4" id="validationCustom04" name="estado" placeholder="Ex: São Paulo" required>
-                    <div class="invalid-feedback">
-                      O estado é obrigatório
-                    </div>
-
-                    <label for="validationCustom05 pt-5">E-mail</label>
-                    <input type="email" class="form-control" id="validationCustom05" name="email" placeholder="Ex: fulano00@gmail.com" required>
-                    <div class="invalid-feedback">
-                      Por favor, informe um e-mail válido.
-                    </div>
-                  </div>
-                </div>
-                <div class="form-row ">
-                    <label for="validationTextarea" class="mt-2">Experiência</label>
-                    <textarea class="form-control" id="validationTextarea" name="experiencia" style="height: 244px" placeholder="Especialidades, experiência, certificados, trabalhos realizados..." required></textarea>
-                    <small id="passwordHelpBlock" class="form-text text-muted">
-                      Não inclua links do seu portfólio. Apenas descreva os seus trabalhos mais relevantes.<br>
-                    </small>
-                    <div class="invalid-feedback">
-                        Este campo é obrigatório
-                    </div>
-                </div>
-                <div class="form-row">
-                    <label for="validationTextarea2" class="mt-3">Motivação</label>
-                    <textarea class="form-control" id="validationTextarea2" name="motivacao" style="height: 130px" placeholder="Por que você quer trabalhar para a Frixel??" required></textarea>
-                    <div class="invalid-feedback">
-                      Este campo é obrigatório
-                    </div>
-                </div>
-                <div class="form-group">
-                  <div class="form-check mt-2">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                    <label class="form-check-label" for="invalidCheck">
-                      Li e concordo com a <a href="../legal/privacidade/index.html" target="_blank">Política de Privacidade</a>.
-                    </label>
-                    <div class="invalid-feedback">
-                      Você deve concordar, antes de continuar.
-                    </div>
-                  </div>
-                </div>
-                <button class="btn btn-frixel-color" type="submit">Enviar</button>
-              </form>
+      <!-- Subscription-->
+      <div class="pt-2" style="background-color: #30363d;">
+        <div class="container">
+          <div class="align-items-center py-4 text-center">
+            <p class="text-sm text-white text-center"><span class='opacity-60'>© 2019-2020 Frixel Studios - Todos os direitos reservados.</span</p>
+          </div>
         </div>
-      </section>
-
-      <hr class="featurette-divider">
-
-      <footer class="position-relative z-index-10 d-print-none">
-          <div class="py-6 bg-gray-200 text-muted bg-gray pt-5 pb-2"> 
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                  <div class="font-weight-bold text-uppercase text-dark mb-3">Frixel Studios</div>
-                  <p>Essa startup brasileira especializada em produção de conteúdo áudio-visual atua de forma totalmente online e, por isso,
-                    pode contar com os grandes talentos deste setor espalhados pelo país.<br>Tem alguma dúvida?<br>
-                    <span class="text-frixel-color" id="email">contato@frixel.com.br</span>
-                  </p>
-                </div>
-                <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
-                  <h6 class="text-uppercase text-dark mb-3">Social</h6>
-                  <ul class="list-unstyled">
-                    <li><a class="text-muted" target="_blank" href="https://www.facebook.com/Frixel-Studios-106103964093948">Facebook</a></li>
-                    <li><a class="text-muted" target="_blank" href="https://www.instagram.com/p_frixel/">Instagram</a></li>
-    
-                  </ul>
-                </div>
-                <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
-                  <h6 class="text-uppercase text-dark mb-3">Página</h6>
-                  <ul class="list-unstyled">
-                    <li><a class="text-muted" href="../">Home</a></li>
-                    <li><a class="text-muted" href="../servicos/">Serviços</a></li>
-                    <li><a class="text-muted" href="">Colaborar</a></li>
-                  </ul>
-                </div>
-                <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
-                  <h6 class="text-uppercase text-dark mb-3">Legal</h6>
-                  <ul class="list-unstyled">
-                    <li><a class="text-muted" href="../legal/termos/">Termos de Serviço</a></li>
-                    <li><a class="text-muted" href="../legal/privacidade/">Política de Privacidade</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Copyright section of the footer-->
-          <div class="py-4 font-weight-light bg-dark text-light">
-            <div class="container">
-              <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-left">
-                  <p class="text-sm mb-md-0">© 2019-2020 Frixel Studios. Todos os direitos reservados.</p>
-                </div>
-                <div class="col-md-6">
-                  <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-md-right">
-                    
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
+      </div>
+    </footer>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="fe-icon-chevron-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="../js/vendor.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/theme.min.js"></script>
   </body>
 </html>
