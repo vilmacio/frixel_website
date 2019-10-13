@@ -24,29 +24,30 @@ mail($to,$subject,$body,$header);
 $msg = '
 <html>
 <body>
-    <div>
-    	<div style="background-color: #f5f5f5; padding: 1rem; margin-bottom: 2rem; text-align: center;">
-    		<img src="https://www.frixel.com.br/img/logo.png" width="20%" alt="frixel">
-    	</div>
-    	<div>
-    		<h1 style="font-weight: bolder; text-align: center; color: #545454; margin-bottom: 2rem; font-family: Calibri, sans-serif;">Recebemos sua solicitação</h2>
-    		<p style="font-size: 1.5rem; text-align: justify; color: #545454; font-family: Calibri, sans-serif;">
-       			Olá!
-       			<br><br>
-       			Sua solicitação para ser um colaborador Frixel já está em análise e por enquanto basta aguardar. Enviaremos
-       			uma resposta em até 1 dia útil.
-       			<br><br>
-       			Boa Sorte!
-       			<br><br><br>
-    		</p>
-    	</div>
-    
-    <footer style="background-color: #f5f5f5; text-align: center; padding: 2rem;">
-        <p style="font-family: Calibri, sans-serif;">Este e-mail é um serviço Frixel - <a href="www.frixel.com.br">Acessar o site.</a></p>
-        <img src="https://www.frixel.com.br/img/logo.png" width="10%" alt="frixel">
-        <p style="font-family: Calibri, sans-serif;">© 2019-2020 Frixel Studios. Todos os direitos reservados.</p>
+    <div style="margin: 12px;">
+        <div style="margin-top: 52px; margin-bottom: 22px;">
+            <img src="https://www.frixel.com.br/img/logo/frixel-dark.png" style="width: 35%" alt="frixel">
+            <p style="font-family: Calibri, sans-serif; float: right; margin: auto;">Email service</p>
+        </div>
+        <div style="border: solid 1px #9c9c9c; border-radius: 15px; padding: 22px;">
+            <h1 style="font-size: 17pt; font-weight: bolder; text-align: center; color: #545454; margin-bottom: 2rem; font-family: Calibri, sans-serif;">Recebemos sua solicitação!</h1>
+            <p style="font-size: 11pt; color: #000000; font-family: Calibri, sans-serif;">
+            Olá!
+            <br><br>
+            Sua solicitação para ser um colaborador Frixel já está em análise e por enquanto basta aguardar. Enviaremos
+            uma resposta em até 1 dia útil.
+            <br><br>
+            Boa Sorte!
+            <br>
+            </p>
+        </div>
 
-    </footer>
+        <footer style="margin-top: 29px;">
+        <p style="font-family: Calibri, sans-serif; font-size: 7pt; color:#757575; text-align: center;">Enviamos este e-mail porquê você cadastrou-se no processo de seleção para ser colaborador(a) da Frixel. Caso tenha recebido este e-mail por engano, <a href="https://www.frixel.com.br/legal/email-cancel/send-cancel-email-user.html">clique aqui</a>. Saiba mais lendo nossa <a href="https://www.frixel.com.br/legal/privacidade/">política de privacidade</a>.</a></p>
+        <p style="font-family: Calibri, sans-serif; font-size: 7pt; color:#757575; text-align: center;">Este e-mail é um serviço Frixel - <a href="https://www.frixel.com.br">Acessar o site.</a></p>
+        <p style="font-family: Calibri, sans-serif; font-size: 7pt; color:#757575; text-align: center;">© 2019-2020 Frixel Studios. Todos os direitos reservados.</p>
+
+        </footer>
     </div>
 </body>
 </html>';
