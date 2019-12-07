@@ -23,7 +23,7 @@ mail($to,$subject,$body,$header);
     </head>
     <body>
         <div class="container text-center">
-        	<img src="img/checkmark.png" class="img-fluid mt-2" alt="Verified">
+        	<img src="img/checkmark.png" class="img-fluid mt-2" width="17%" alt="Verified">
         	<h2 class="b display-4 text-center mb-3">Tudo certo!</h2>
             <h5 face="Arial" size="3" class="text-center text-frixel-color">Você não receberá mais e-mails da Frixel.<br></h5>
         </div>

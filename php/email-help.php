@@ -9,7 +9,7 @@ $to = "ajuda@frixel.com.br";
 $subject = "Solicitação de Ajuda";
 $body = "Nome: ".$nome."\n".
         "E-mail: ".$email."\n".
-        "Tópico: ".$topico."\n".
+        "Topico: ".$topico."\n".
         "Assunto: ".$assunto."\n".
         "Mensagem: ".$mensagem."\n";
 $header = "From:host@frixel.com.br"."\n".
@@ -31,10 +31,10 @@ mail($to,$subject,$body,$header);
     </head>
     <body>
         <div class="container text-center">
-        	<img src="img/checkmark.png" class="img-fluid mt-2" alt="Verified">
+        	<img src="img/checkmark.png" class="img-fluid mt-2" width="17%" alt="Verified">
         	<h2 class="b display-4 text-center mb-3">Tudo certo!</h2>
-            <h5 face="Arial" size="3" class="text-center text-frixel-color">Sua solicitação foi enviada com SUCESSO.<br><br>Fique de olho em seu e-mail, nas fases iniciais, a comunicação ocorrerá por lá.<br><br><br><br></h5>
-            <h5 face="Arial" size="3" class="text-center text-frixel-color">Clique para retornar à <a href="www.frixel.com.br">página principal</a>.</h5>
+            <h5 face="Arial" size="3" class="text-center text-frixel-color">Sua solicitação foi enviada com SUCESSO.<br><br><br></h5>
+            <h5 face="Arial" size="3" class="text-center text-frixel-color">Clique para retornar à <a href="https://www.frixel.com.br">página principal</a>.</h5>
         </div>
     </body>
  </html>

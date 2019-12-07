@@ -100,64 +100,75 @@
       </div>
     </header>
     <!-- Modal Components -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Contratar serviço</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form class="modal-needs-validation pl-4 pr-4" method="POST" action="../../php/email-modal.php" novalidate>
-              <div class="form-group">
-                <label for="validationCustom03" class="col-form-label">Tipo de cliente:</label>
-                <select class="custom-select" name="cliente"required>
-                  <option value="Pessoa">Pessoa</option>
-                  <option value="Empresa">Empresa</option>
-
-                </select>
-                <div class="invalid-feedback">
-                  Selecione uma opção
+    <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contratar serviço</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+              <form class="modal-needs-validation pl-4 pr-4" method="POST" action="../../php/email-modal.php" novalidate>
+                <div class="row modal-body">
+                <div class="col-md-6">
+                <div class="form-group">
+                  <label for="validationCustom03" class="col-form-label">Tipo de cliente:</label>
+                  <select class="custom-select" name="cliente"required>
+                    <option value="Pessoa">Pessoa</option>
+                    <option value="Empresa">Empresa</option>
+  
+                  </select>
+                  <div class="invalid-feedback">
+                    Selecione uma opção
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="validationCustom01" class="col-form-label">Nome:</label>
+                  <input type="text" class="form-control" id="validationCustom01" name="nome" required>
+                  <div class="invalid-feedback">
+                    O nome é obrigatório
+                  </div>
+  
+                  <label for="validationCustom02" class="col-form-label">E-mail:</label>
+                  <input type="email" class="form-control" id="validationCustom02" name="email" required>
+                  <div class="invalid-feedback">
+                    O e-mail é obrigatório
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="validationCustom03" class="col-form-label">Tipo de serviço:</label>
+                  <select class="custom-select" name="selecao"required>
+                    <option value="">Selecione</option>
+                    <option value="Edição de vídeo">Pós-produção de vídeo</option>
+                    <option value="Animação 2D">Animação 2D</option>
+                    <option value="Animação 3D">Animação 3D</option>
+                    <option value="Edição de imagem">Edição/Criação de imagem</option>
+                    <option value="Outro">Outro</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Selecione uma opção
+                  </div>
                 </div>
               </div>
-              <div class="form-group">
-                <label for="validationCustom01" class="col-form-label">Nome:</label>
-                <input type="text" class="form-control" id="validationCustom01" name="nome" required>
-                <div class="invalid-feedback">
-                  O nome é obrigatório
-                </div>
-
-                <label for="validationCustom02" class="col-form-label">E-mail:</label>
-                <input type="email" class="form-control" id="validationCustom02" name="email" required>
-                <div class="invalid-feedback">
-                  O e-mail é obrigatório
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="validationCustom03" class="col-form-label">Descrição do projeto:</label>
+                  <textarea class="form-control" id="validationCustom03" rows="15" name="descricao" required></textarea>                
+                  <div class="invalid-feedback">
+                    Este campo é obrigatório
+                  </div>
                 </div>
               </div>
-              <div class="form-group">
-                <label for="validationCustom03" class="col-form-label">Tipo de serviço:</label>
-                <select class="custom-select" name="selecao"required>
-                  <option value="">Selecione</option>
-                  <option value="Edição de vídeo">Pós-produção de vídeo</option>
-                  <option value="Animação 2D">Animação 2D</option>
-                  <option value="Animação 3D">Animação 3D</option>
-                  <option value="Edição de imagem">Edição/Criação de imagem</option>
-                  <option value="Outro">Outro</option>
-                </select>
-                <div class="invalid-feedback">
-                  Selecione uma opção
+            </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
                 </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-              </div>
-            </form>
+              </form>
           </div>
         </div>
       </div>
-    </div>
     <!-- Page Title-->
     <div class="page-title d-flex" aria-label="Page title" style="background-image: url(../../img/page-title/portfolio-pattern.png);">
       <div class="container text-left align-self-center">
@@ -184,14 +195,14 @@
                   <div class="col-sm-6">
                     <div class="form-group">
                       <label for="help-name">Nome <strong class="text-danger">*</strong></label>
-                      <input class="form-control" type="text" required="" id="nome">
+                      <input class="form-control" type="text" required="" name="nome">
                       <div class="invalid-feedback">O nome é obrigatório!</div>
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
                       <label for="help-email">E-mail <strong class="text-danger">*</strong></label>
-                      <input class="form-control" type="email" required="" id="email">
+                      <input class="form-control" type="email" required="" name="email">
                       <div class="invalid-feedback">O e-mail é obrigatório!</div>
                     </div>
                   </div>
@@ -200,7 +211,7 @@
               <div class="col-sm-6">
                 <div class="form-group">
                   <label for="help-topic">Selecione um tópico <strong class="text-danger">*</strong></label>
-                  <select class="form-control" required="" id="topico">
+                  <select class="form-control" required="" name="topico">
                     <option value="">—</option>
                     <option value="Pagamento">Pagamento</option>
                     <option value="Servicos">Serviços</option>
@@ -214,14 +225,14 @@
               <div class="col-sm-6">
                 <div class="form-group">
                   <label for="help-subject">Assunto <strong class="text-danger">*</strong></label>
-                  <input class="form-control" type="text" required="" id="assunto">
+                  <input class="form-control" type="text" required="" name="assunto">
                   <div class="invalid-feedback">Por favor, escreva um assunto para seu problema!</div>
                 </div>
               </div>
             </div>
             <div class="form-group">
               <label for="help-message">Mensagem <strong class="text-danger">*</strong></label>
-              <textarea class="form-control" rows="6" required="" id="mensagem"></textarea>
+              <textarea class="form-control" rows="6" required="" name="mensagem"></textarea>
               <div class="invalid-feedback">Por favor, faça uma descrição do seu problema!</div>
             </div>
             <button class="btn btn-primary mr-4" type="submit">Enviar solicitação</button><a class="navi-link d-inline-block align-middle py-2" href="https://www.frixel.com.br/legal/privacidade">Política de Privacidade</a>
